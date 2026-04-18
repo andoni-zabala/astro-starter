@@ -1,0 +1,22 @@
+---
+interface Props {
+  variant?: 'default' | 'light';
+  class?: string;
+}
+
+const { variant = 'default', class: className = '' } = Astro.props;
+---
+
+<div class:list={['section-tag', { 'section-tag--light': variant === 'light' }, className]}>
+  <slot />
+</div>
+
+<style>
+  .section-tag--light {
+    color: var(--color-accent-light);
+  }
+
+  .section-tag--light::before {
+    background: var(--color-accent-light);
+  }
+</style>

@@ -1,0 +1,123 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: 'en'
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  # ─── SITE IDENTITY ─────────────────────────────────────────────────────────
+  - name: identity
+    label: Site identity
+    files:
+      - name: identity
+        label: Site identity
+        file: src/data/identity.json
+        fields:
+          - { label: Business name,  name: name,        widget: string }
+          - { label: Tagline,        name: tagline,      widget: string }
+          - { label: Site URL,       name: url,          widget: string }
+          - { label: Language code,  name: locale,       widget: string,  default: en }
+          - { label: OG locale,      name: ogLocale,     widget: string,  default: en_US }
+          - { label: Meta description, name: description, widget: text }
+          - { label: OG image,       name: ogImage,      widget: image,   required: false }
+          - { label: Author name,    name: author,       widget: string }
+          - { label: Theme color,    name: themeColor,   widget: string,  default: '#1B3A1A' }
+
+  # ─── CTA ───────────────────────────────────────────────────────────────────
+  - name: cta
+    label: Call to action
+    files:
+      - name: cta
+        label: Primary CTA button
+        file: src/data/cta.json
+        fields:
+          - label: Type
+            name: type
+            widget: select
+            options: [whatsapp, calendly, phone, email, url]
+          - { label: Value (phone / URL / email), name: value,   widget: string }
+          - { label: Button label,               name: label,   widget: string }
+          - { label: WhatsApp pre-fill message,  name: message, widget: string, required: false }
+
+  # ─── HERO ──────────────────────────────────────────────────────────────────
+  - name: hero
+    label: Hero section
+    files:
+      - name: hero
+        label: Hero section
+        file: src/data/hero.json
+        fields:
+          - { label: Eyebrow text,   name: eyebrow,      widget: string }
+          - { label: Heading (HTML), name: heading,      widget: string,   hint: 'Wrap emphasis in <em>italic</em>' }
+          - { label: Body text,      name: body,         widget: text }
+          - { label: Profile photo,  name: profilePhoto, widget: image }
+          - { label: Badge label,    name: badgeLabel,   widget: string }
+          - label: Stats (3 items)
+            name: stats
+            widget: list
+            fields:
+              - { label: Value, name: value, widget: string }
+              - { label: Label, name: label, widget: string }
+          - label: Float cards (2 items)
+            name: floatCards
+            widget: list
+            fields:
+              - { label: Icon (emoji), name: icon,  widget: string }
+              - { label: Label,        name: label, widget: string }
+              - { label: Value,        name: value, widget: string }
+
+  # ─── SERVICES ──────────────────────────────────────────────────────────────
+  - name: services
+    label: Services section
+    files:
+      - name: services
+        label: Services section
+        file: src/data/services.json
+        fields:
+          - { label: Section tag,  name: sectionTag,  widget: string }
+          - { label: Heading,      name: heading,     widget: string }
+          - { label: Subheading,   name: subheading,  widget: string }
+          - { label: Modality note, name: modalityNote, widget: string }
+          - label: Area labels (tags shown under heading)
+            name: areaLabels
+            widget: list
+            field: { label: Label, name: label, widget: string }
+          - label: Service items
+            name: items
+            widget: list
+            fields:
+              - { label: Number,      name: number,      widget: string }
+              - { label: Icon,        name: icon,        widget: string }
+              - { label: Title,       name: title,       widget: string }
+              - { label: Tagline,     name: tagline,     widget: string }
+              - { label: Description, name: description, widget: text }
+              - label: Features
+                name: features
+                widget: list
+                field: { label: Feature, name: feature, widget: string }
+              - { label: Price,    name: price,    widget: string }
+              - { label: Featured, name: featured, widget: boolean, default: false }
+
+  # ─── TESTIMONIALS ──────────────────────────────────────────────────────────
+  - name: testimonials
+    label: Testimonials section
+    files:
+      - name: testimonials
+        label: Testimonials section
+        file: src/data/testimonials.json
+        fields:
+          - { label: Section tag, name: sectionTag, widget: string }
+          - { label: Heading,     name: heading,    widget: string }
+          - { label: CTA prompt,  name: ctaPrompt,  widget: string }
+          - label: Testimonial items
+            name: items
+            widget: list
+            fields:
+              - { label: Quote,        name: quote,  widget: text }
+              - { label: Client name,  name: name,   widget: string }
+              - { label: Role / city,  name: role,   widget: string }
+              - { label: Avatar (initials), name: avatar, widget: string }
+              - { label: Result tag,   name: result, widget: string }

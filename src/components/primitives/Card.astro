@@ -1,0 +1,47 @@
+---
+interface Props {
+  featured?: boolean;
+  hoverable?: boolean;
+  padding?: 'default' | 'large' | 'compact';
+  class?: string;
+}
+
+const {
+  featured = false,
+  hoverable = true,
+  padding = 'default',
+  class: className = '',
+} = Astro.props;
+---
+
+<div class:list={['card', { 'card--featured': featured, 'card--hoverable': hoverable }, `card--pad-${padding}`, className]}>
+  <slot />
+</div>
+
+<style>
+  .card {
+    background: white;
+    border-radius: 20px;
+    border: 1.5px solid var(--color-surface-alt);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .card--featured {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-surface);
+  }
+
+  .card--hoverable:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+  }
+
+  .card--featured.card--hoverable:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  }
+
+  .card--pad-default { padding: 2.25rem; }
+  .card--pad-large   { padding: 3rem; }
+  .card--pad-compact { padding: 1.5rem; }
+</style>

@@ -1,0 +1,201 @@
+---
+import { site, navigation, contact, footer, primaryCTA } from '../../content/site.config';
+import Button from '../primitives/Button.astro';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <span class="footer-name">{site.name}</span>
+        <span class="footer-sub">{site.tagline}</span>
+      </a>
+      <p class="footer-tagline">{footer.tagline}</p>
+    </div>
+
+    <div class="footer-nav">
+      <span class="footer-nav-label">Navigation</span>
+      <ul>
+        {navigation.map((link) => (
+          <li><a href={link.href}>{link.label}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="footer-nav">
+      <span class="footer-nav-label">Connect</span>
+      <ul>
+        {contact.social.map((s) => (
+          <li>
+            <a href={s.href} target="_blank" rel="noopener noreferrer">{s.label}</a>
+          </li>
+        ))}
+        <li><a href={`mailto:${contact.email}`}>Email</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-cta-col">
+      <p class="footer-cta-text">Ready to get started?</p>
+      <Button cta={primaryCTA} variant="light" />
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© {year} {site.name}. All rights reserved.</p>
+    <div class="footer-legal">
+      {footer.legalLinks.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-primary);
+    padding: 5rem 2.5rem 2.5rem;
+    color: rgba(250, 247, 240, 0.65);
+  }
+
+  .footer-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(250, 247, 240, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .footer-name {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-surface);
+    letter-spacing: 0.01em;
+  }
+
+  .footer-sub {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    font-weight: 400;
+  }
+
+  .footer-tagline {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: rgba(250, 247, 240, 0.5);
+    font-weight: 300;
+    max-width: 280px;
+  }
+
+  .footer-nav-label {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(250, 247, 240, 0.3);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-nav a {
+    text-decoration: none;
+    color: rgba(250, 247, 240, 0.6);
+    font-size: 0.875rem;
+    font-weight: 300;
+    transition: color 0.2s ease;
+  }
+
+  .footer-nav a:hover {
+    color: var(--color-surface);
+  }
+
+  .footer-cta-text {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--color-surface);
+    margin-bottom: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .footer-bottom {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+    color: rgba(250, 247, 240, 0.3);
+    font-weight: 300;
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-legal a {
+    font-size: 0.75rem;
+    color: rgba(250, 247, 240, 0.3);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-legal a:hover {
+    color: rgba(250, 247, 240, 0.7);
+  }
+
+  @media (max-width: 1024px) {
+    .footer-inner {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+      grid-column: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer {
+      padding: 4rem 1.5rem 2rem;
+    }
+  }
+</style>

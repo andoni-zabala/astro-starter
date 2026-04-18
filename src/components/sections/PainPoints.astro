@@ -1,0 +1,174 @@
+---
+import { painPoints } from '../../content/site.config';
+---
+
+<section class="pain-points" id="pain-points">
+  <div class="pain-points-inner">
+
+    <div class="pain-points-header">
+      <div class="section-tag reveal">{painPoints.eyebrow}</div>
+      <h2 class="pain-points-heading reveal reveal-delay-1">{painPoints.heading}</h2>
+    </div>
+
+    <div class="pain-points-cols">
+
+      <div class="pain-col reveal reveal-delay-2">
+        <ul class="pain-list">
+          {painPoints.pains.map((item) => (
+            <li class="pain-item">
+              <span class="pain-icon" aria-hidden="true">→</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <p class="pain-transition reveal reveal-delay-3">
+          {painPoints.transition}
+        </p>
+      </div>
+
+      <div class="pain-divider" aria-hidden="true"></div>
+
+      <div class="pain-col reveal reveal-delay-3">
+        <h3 class="solution-heading">{painPoints.solutionHeading}</h3>
+        <ul class="solution-list">
+          {painPoints.solutions.map((item) => (
+            <li class="solution-item">
+              <span class="solution-check" aria-hidden="true">✦</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .pain-points {
+    padding: 7rem 2.5rem;
+    border-top: 1px solid var(--color-surface-alt);
+  }
+
+  .pain-points-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+
+  .pain-points-header {
+    margin-bottom: 4rem;
+  }
+
+  .pain-points-heading {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 3.5vw, 3.6rem);
+    line-height: 1.1;
+    color: var(--color-primary);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+
+  .pain-points-cols {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .pain-divider {
+    background: var(--color-surface-alt);
+    align-self: stretch;
+  }
+
+  .pain-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .pain-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  .pain-icon {
+    color: var(--color-emphasis);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+    font-weight: 500;
+  }
+
+  .pain-transition {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--color-primary);
+    font-style: italic;
+    font-weight: 400;
+    padding: 1.25rem 1.5rem;
+    background: color-mix(in srgb, var(--color-emphasis) 6%, transparent);
+    border-left: 3px solid var(--color-emphasis);
+    border-radius: 0 10px 10px 0;
+  }
+
+  .solution-heading {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .solution-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .solution-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .solution-check {
+    color: var(--color-accent);
+    font-size: 0.6rem;
+    flex-shrink: 0;
+    margin-top: 0.4rem;
+  }
+
+  @media (max-width: 1024px) {
+    .pain-points-cols {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .pain-divider {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pain-points {
+      padding: 5rem 1.5rem;
+    }
+  }
+</style>

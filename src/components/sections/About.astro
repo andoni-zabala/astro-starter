@@ -1,0 +1,203 @@
+---
+import { about, primaryCTA } from '../../content/site.config';
+import Button from '../primitives/Button.astro';
+---
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-image-col reveal">
+      <div class="about-frame">
+        <img
+          src={about.photo}
+          alt={about.photoAlt}
+          class="about-photo"
+          width="600"
+          height="750"
+          loading="lazy"
+        />
+        <div class="about-frame-deco" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-credentials reveal reveal-delay-2">
+        {about.credentials.map((cred) => (
+          <div class="cred-item">
+            {cred.icon && <span class="cred-icon" aria-hidden="true">{cred.icon}</span>}
+            <div>
+              <div class="cred-title">{cred.title}</div>
+              <div class="cred-sub">{cred.subtitle}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="about-text-col">
+      <div class="section-tag reveal">{about.sectionTag}</div>
+
+      <h2 class="about-heading reveal reveal-delay-1" set:html={about.heading} />
+
+      {about.paragraphs.map((p, i) => (
+        <p class={`about-p reveal reveal-delay-${i + 2}`} set:html={p} />
+      ))}
+
+      <div class="about-values reveal reveal-delay-4">
+        {about.values.map((v) => (
+          <div class="value">
+            <span class="value-icon" aria-hidden="true">✦</span>
+            <span>{v}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="about-cta reveal reveal-delay-5">
+        <Button cta={primaryCTA} />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 8rem 2.5rem;
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    align-items: start;
+  }
+
+  .about-image-col {
+    position: sticky;
+    top: 7rem;
+  }
+
+  .about-frame {
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 16px;
+    filter: brightness(1.05) contrast(1.02);
+  }
+
+  .about-frame-deco {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    right: 16px;
+    bottom: 16px;
+    border: 1.5px solid var(--color-surface-alt);
+    border-radius: 18px;
+    z-index: -1;
+  }
+
+  .about-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .cred-item {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+  }
+
+  .cred-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .cred-title {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+
+  .cred-sub {
+    font-size: 0.72rem;
+    color: #999;
+    margin-top: 0.1rem;
+  }
+
+  .about-heading {
+    font-size: clamp(2.4rem, 3.5vw, 3.6rem);
+    line-height: 1.1;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+
+  .about-heading :global(em) {
+    font-style: italic;
+    color: var(--color-emphasis);
+  }
+
+  .about-p {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+  }
+
+  .about-p :global(strong) {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  .about-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .value {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--color-text);
+    font-weight: 400;
+  }
+
+  .value-icon {
+    color: var(--color-decorative);
+    font-size: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  .about-cta {
+    margin-top: 2.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .about-inner {
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+    }
+
+    .about-image-col {
+      position: static;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about {
+      padding: 5rem 1.5rem;
+    }
+  }
+</style>
