@@ -120,7 +120,7 @@ export const services = {
 
 Swap the entire visual identity by replacing the `@theme` block in `src/styles/global.css`.
 
-### Wellness (default)
+### Default palette
 ```css
 @theme {
   --color-primary:       #1B3A1A;

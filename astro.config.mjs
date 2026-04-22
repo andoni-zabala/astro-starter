@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://licmabelgomez.netlify.app/',
+  site: 'https://yourdomain.com',
   integrations: [
     sitemap({
       changefreq: 'weekly',

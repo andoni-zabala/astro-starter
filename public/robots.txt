@@ -27,4 +27,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://licmabelgomez.netlify.app/sitemap-index.xml
+Sitemap: https://yourdomain.com/sitemap-index.xml

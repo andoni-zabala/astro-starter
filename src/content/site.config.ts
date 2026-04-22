@@ -91,13 +91,13 @@ export const navigation: NavLink[] = [
 
 // ─── HERO SECTION ─────────────────────────────────────────────────────────────
 const defaultHero = {
-  eyebrow:      'Now taking new clients',
-  heading:      'Achieve <em>remarkable results</em> with a personalised approach.',
+  eyebrow:      'Now open for new projects',
+  heading:      'Deliver <em>exceptional results</em> for every client.',
   body:         "I'm [Name], [credential]. I help [your ideal client] achieve [their goal] — with an approach built for your specific situation.",
   profilePhoto: '/uploads/profile.jpg',
   badgeLabel:   '[Your Title or Badge]',
   floatCards: [
-    { icon: '✓', label: 'Approach',  value: 'Fully personalised' },
+    { icon: '✓', label: 'Approach',  value: 'Tailored to you' },
     { icon: '💻', label: 'Available', value: 'Online & in-person' },
   ] satisfies FloatCard[],
   stats: [
@@ -114,27 +114,27 @@ export const painPoints = {
   eyebrow:         'Sound familiar?',
   heading:         'Do you find that...?',
   pains: [
-    "You've tried different approaches but nothing sticks",
+    "You've worked with others but the results didn't last",
     "You're not sure where to start or what's right for you",
-    "It's hard to stay consistent and build momentum",
-    "You keep starting over and feeling discouraged",
+    "It's hard to know which option is actually right for you",
+    "You're ready to move forward but not sure where to start",
   ],
   transition:      "You're not alone. Most generic approaches fail because they weren't designed for your specific situation.",
   solutionHeading: 'Here we work differently.',
   solutions: [
     'A personalised approach — not a one-size-fits-all solution',
-    'Build habits and routines that actually last',
+    'Clear process and transparent communication at every step',
     'Understand exactly what you need and why',
-    'Real, measurable results without extreme measures',
+    'Real, measurable outcomes without unnecessary complexity',
   ],
 };
 
 // ─── ABOUT SECTION ───────────────────────────────────────────────────────────
 export const about = {
-  sectionTag: 'About me',
+  sectionTag: 'About',
   heading:    'A professional who understands that <em>every situation is different.</em>',
   paragraphs: [
-    'With years of experience working with clients across different backgrounds, I take a personalised, evidence-based approach to help you reach your goals sustainably.',
+    'With years of experience working with clients across different backgrounds, I take a personalised, proven approach to help you reach your goals sustainably.',
     "My specialist training allows me to design plans that work for your specific situation — not just a generic programme.",
   ],
   photo:       '/uploads/about.jpg',
@@ -158,7 +158,7 @@ export const process = {
   heading:    'How it works',
   subheading: 'Four simple steps to start making lasting progress.',
   steps: [
-    { number: '01', title: 'Book your consultation',   body: 'Reach out and we\'ll schedule a convenient time for your first session.' },
+    { number: '01', title: 'Get in touch',               body: 'Reach out and we\'ll arrange a convenient time to discuss your needs.' },
     { number: '02', title: 'We assess your situation', body: 'We take time to understand your goals, history, and what hasn\'t worked before.' },
     { number: '03', title: 'You receive your plan',    body: 'A personalised plan tailored specifically to you — not a template.' },
     { number: '04', title: 'We track your progress',   body: 'Ongoing support and check-ins to make sure the plan keeps working as your life evolves.' },
@@ -168,38 +168,38 @@ export const process = {
 // ─── SERVICES SECTION ────────────────────────────────────────────────────────
 const defaultServices = {
   sectionTag:   'Services',
-  heading:      'How can I <em>help you?</em>',
-  subheading:   'Each service is designed to achieve real, sustainable change.',
+  heading:      'How can we <em>help you?</em>',
+  subheading:   'Each service is designed to deliver real, lasting value.',
   areaLabels:   ['Area 1', 'Area 2', 'Area 3', 'Area 4', 'Area 5', 'Area 6'],
   modalityNote: '📍 Available online and in-person.',
   items: [
     {
       number:      '01',
       icon:        '◎',
-      title:       'Initial Consultation',
-      tagline:     'The starting point',
-      description: 'A comprehensive first session to understand your situation and create a clear, personalised plan.',
-      features:    ['Full assessment', 'Goal definition', 'Personalised guidance', 'Initial plan'],
+      title:       'Starter Package',
+      tagline:     'The right place to begin',
+      description: 'Everything you need to get started — a clear brief, agreed scope, and a first deliverable.',
+      features:    ['Needs assessment', 'Scope definition', 'Initial delivery', 'Feedback round'],
       price:       'Contact for pricing',
       featured:    true,
     },
     {
       number:      '02',
       icon:        '◈',
-      title:       'Follow-up Session',
-      tagline:     'Stay on track',
-      description: 'Regular check-ins to review progress, adjust your plan and keep momentum going.',
-      features:    ['Progress review', 'Plan adjustment', 'Q&A time', 'Continued support'],
+      title:       'Ongoing Retainer',
+      tagline:     'Stay on track, month to month',
+      description: 'Continued support, regular deliverables, and a direct line so your project keeps moving.',
+      features:    ['Monthly check-ins', 'Priority access', 'Flexible scope', 'Dedicated support'],
       price:       'Contact for pricing',
       featured:    false,
     },
     {
       number:      '03',
       icon:        '◇',
-      title:       'Online Session',
-      tagline:     'Wherever you are',
-      description: 'Full sessions via video call — same quality, complete flexibility.',
-      features:    ['Video consultation', 'Digital materials', 'Flexible scheduling', 'Remote support'],
+      title:       'Project Engagement',
+      tagline:     'Start to finish, fixed scope',
+      description: 'A defined project with clear milestones — delivered on time and on brief.',
+      features:    ['Fixed deliverables', 'Clear timeline', 'Regular updates', 'Final sign-off'],
       price:       'Contact for pricing',
       featured:    false,
     },
@@ -213,9 +213,9 @@ export const services = {
 
 // ─── APPROACH SECTION ────────────────────────────────────────────────────────
 export const approach = {
-  sectionTag: 'My approach',
+  sectionTag: 'Our approach',
   quote:      '"[A meaningful quote that captures your professional philosophy and resonates with your ideal client.]"',
-  body:       "My practice is grounded in [your approach]. I focus on [key methodology] because I believe that [core belief that drives your work].",
+  body:       "Our work is grounded in [your approach]. We focus on [key methodology] because we believe that [core belief that drives your work].",
   principles: [
     { title: 'Principle One',   body: 'Brief description of this core principle and why it matters for clients.' },
     { title: 'Principle Two',   body: 'Brief description of this core principle and why it matters for clients.' },
@@ -227,8 +227,8 @@ export const approach = {
 // ─── TESTIMONIALS ────────────────────────────────────────────────────────────
 const defaultTestimonials = {
   sectionTag: 'Testimonials',
-  heading:    'What my clients say',
-  ctaPrompt:  'Ready to start your own transformation?',
+  heading:    'What our clients say',
+  ctaPrompt:  'Ready to get started?',
   items: [
     {
       quote:  'Working with [Name] completely changed my approach. I finally have a sustainable plan that actually fits my life.',
@@ -262,8 +262,8 @@ export const testimonials = {
 // ─── CONTACT SECTION ─────────────────────────────────────────────────────────
 export const contact = {
   sectionTag:  'Contact',
-  heading:     'Start making progress <em>today</em>',
-  subheading:  'The fastest way to get started is to reach out directly. I usually respond within a few hours.',
+  heading:     'Get in touch <em>today</em>',
+  subheading:  'The fastest way to get started is to reach out directly. We usually respond within a few hours.',
   email:       'hello@yourdomain.com',
   location:    'Online & in-person appointments',
   hours:       'Mon–Fri, 9:00–18:00',
@@ -281,15 +281,15 @@ export const contact = {
       { value: 'option-3', label: 'Goal / Reason 3' },
       { value: 'other',    label: 'Other'            },
     ] satisfies FormOption[],
-    messageLabel:       'Tell me about your situation',
-    messagePlaceholder: "What's going on? What have you tried before? Any context helps.",
+    messageLabel:       'Tell us about your situation',
+    messagePlaceholder: "What are you looking for? Any context helps.",
     submitLabel:        'Send message',
   },
 };
 
 // ─── FOOTER ──────────────────────────────────────────────────────────────────
 export const footer = {
-  tagline: 'Helping clients achieve real results — built around your goals.',
+  tagline: 'Quality work, delivered on time — built around your goals.',
   legalLinks: [
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms',          href: '/terms'   },

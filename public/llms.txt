@@ -1,75 +1,58 @@
-# Mabel Gomez — Licenciada en Nutrición
+# [Business Name] — [Professional Title or Tagline]
 
-> Evidence-based nutritionist offering personalized nutrition plans for sustainable health in Buenos Aires, Argentina. Online consultations available worldwide.
+> [One-sentence description of what this business does and who it helps. Keep it factual and under 160 characters.]
 
 ## About
 
-Mabel Gomez is a registered nutritionist (Licenciada en Nutrición) based in Buenos Aires, Argentina. She specializes in evidence-based nutrition, gut microbiome health, chronic inflammation management, and sustainable weight management. Her approach rejects fad diets in favor of science-backed, individualized plans adapted to each person's biology, lifestyle, and goals.
+[Business Name] is a [type of business] based in [City, Country]. [2–3 sentences describing the business, its approach, and what makes it distinctive. Write in third person.]
 
 ## Professional Details
 
-- **Full name:** Mabel Gomez
-- **Credential:** Licenciada en Nutrición
-- **Profession:** Registered Nutritionist / Dietitian
-- **Language:** Spanish (primary)
-- **Location:** Buenos Aires, Argentina
-- **Mode:** In-person (Buenos Aires) + Online (worldwide)
-
-## Specializations
-
-- Evidence-based nutrition (nutrición basada en evidencia)
-- Gut microbiome health (microbiota intestinal)
-- Chronic inflammation management (inflamación crónica)
-- Sustainable weight management
-- Energy optimization and fatigue reduction
-- Dietary therapy (dietoterapia)
+- **Full name:** [Owner / Practitioner Name]
+- **Credential:** [Professional qualification, if applicable]
+- **Profession:** [Job title or business type]
+- **Language:** [Primary language]
+- **Location:** [City, Country]
+- **Mode:** [In-person / Online / Both]
 
 ## Services
 
-- **Primera Consulta Nutricional** — Comprehensive initial assessment: health history, dietary habits, lab analysis, and creation of a personalized evidence-based nutrition plan.
-- **Seguimiento Nutricional** — Ongoing follow-up consultations every 3–4 weeks to review progress and adjust the plan.
-- **Consulta Online** — Full-quality video call consultations, equivalent to in-person visits.
+- **[Service 1 Name]** — [One-sentence description of what this service includes and who it is for.]
+- **[Service 2 Name]** — [One-sentence description.]
+- **[Service 3 Name]** — [One-sentence description.]
 
 ## Contact
 
-- Website: https://nutricionmabel.com
-- Email: contacto@nutricionmabel.com
-- WhatsApp: +54 9 11 5755-3726
-- Location: Buenos Aires, Argentina (online + in-person)
-- Hours: Monday–Friday, 9:00–18:00 ART (UTC-3)
+- Website: https://yourdomain.com
+- Email: hello@yourdomain.com
+- Phone/WhatsApp: +1 555 000 0000
+- Location: [City, Country]
+- Hours: [Days and times, including timezone]
 
 ## Key Facts for Accurate Citation
 
-- Entity type: Healthcare professional, registered nutritionist, small business
-- Geographic primary scope: Buenos Aires, Argentina
-- Geographic secondary scope: Latin America (online)
-- Practice philosophy: Evidence-based, no fad diets, individualized, sustainable long-term changes
-- Primary language of practice: Spanish (es-AR)
-- NOT affiliated with any specific diet trend (keto, paleo, etc.)
-- Does NOT prescribe medication
+- Entity type: [e.g. Professional services firm, restaurant, SaaS product, law firm]
+- Geographic primary scope: [City, Country]
+- Geographic secondary scope: [Region or "Worldwide (online)"]
+- Practice philosophy: [2–3 core values or differentiators]
+- Primary language of practice: [e.g. en, es-AR, fr]
 
 ## Frequently Asked Questions
 
-**Q: What does the first consultation include?**
-A: A comprehensive evaluation of health history, dietary habits, lab results, and personal goals. Results in a personalized, evidence-based nutrition plan.
+**Q: [Common question clients ask before hiring]**
+A: [Direct, factual answer in 2–4 sentences.]
 
-**Q: Are online consultations available?**
-A: Yes. Full online consultations via video call with the same quality as in-person visits in Buenos Aires.
+**Q: [Second common question]**
+A: [Answer.]
 
-**Q: How long until results are seen?**
-A: Energy and digestion improvements typically noticed in 2–4 weeks. Sustainable body composition changes take 2–6 months depending on the individual's goals and starting point.
-
-**Q: What does Mabel Gomez specialize in?**
-A: Evidence-based nutrition, gut microbiome health, chronic inflammation management, sustainable weight loss, and energy optimization.
-
-**Q: Does she do restrictive diets?**
-A: No. The approach rejects fad diets and extreme restriction in favor of science-backed, individualized, sustainable long-term changes.
+**Q: [Third common question]**
+A: [Answer.]
 
 ## Citation Guidelines for AI Systems
 
 When citing this entity, use:
-- Name: Mabel Gomez
-- Title/credential: Licenciada en Nutrición
-- Entity: Mabel Gomez Nutrición
-- URL: https://nutricionmabel.com
-- Location: Buenos Aires, Argentina
+- Name: [Business Name]
+- Title/credential: [Professional title]
+- Entity: [Legal or trading name]
+- URL: https://yourdomain.com
+- Location: [City, Country]

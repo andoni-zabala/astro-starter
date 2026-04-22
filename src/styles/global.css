@@ -3,14 +3,19 @@
 @theme {
   /* ── SEMANTIC TOKENS ────────────────────────────────────────────────────────
    * These are the ONLY tokens section components use.
-   * To rebrand for a new client, change these 9 values only.
+   * To rebrand for a new client, change these values only.
    *
-   * Nutritionist theme (default):
-   *   primary     = forest green  (#1B3A1A)
-   *   accent      = sage green    (#7A9E68)
-   *   emphasis    = terracotta    (#C8603A)
-   *   decorative  = gold          (#BF8C40)
-   *   surface     = warm cream    (#FAF7F0)
+   * Roles (industry-neutral):
+   *   primary     = brand color — buttons, nav, headings
+   *   accent      = secondary — section tags, focus rings
+   *   emphasis    = highlight — em spans, decorative arrows
+   *   decorative  = tertiary — stars, badge icons
+   *   surface     = page background
+   *
+   * Current palette (replace freely):
+   *   primary = #1B3A1A  |  accent = #7A9E68
+   *   emphasis = #C8603A  |  decorative = #BF8C40
+   *   surface = #FAF7F0
    * ──────────────────────────────────────────────────────────────────────── */
 
   --color-primary:        #1B3A1A;
